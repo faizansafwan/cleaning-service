@@ -6,7 +6,9 @@ require('dotenv').config();
 
 // const bookingRoutes = require('./routes/bookingRoutes');
 const sequelize = require('./database/db.js');
-const router = require('./routes/UserRoutes.js');
+const userRouter = require('./routes/UserRoutes.js');
+const bookingRouter = require('./routes/BookingRoutes.js');
+const serviceRouter = require('./routes/ServiceRoutes.js');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -16,8 +18,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
-app.use("/user", router);
-// app.use('/bookings', bookingRoutes);
+app.use("/user", userRouter);
+app.use('/booking', bookingRouter);
+app.use('/service', serviceRouter);
 
 // Server start
 app.listen(PORT, () => {
