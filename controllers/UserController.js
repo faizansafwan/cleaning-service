@@ -81,7 +81,10 @@ async function loginUser(req, res) {
 
 
     // You can generate a token here if needed (e.g., JWT)
-    res.status(200).json({ message: 'Login successful!', user: { id: user.id, username: user.username }, "Token Key": token });
+    res.status(200).json({ 
+      message: 'Login successful!', 
+      user: { id: user.id, username: user.username }, 
+      "Token Key": token });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Something went wrong!' });
