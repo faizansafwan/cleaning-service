@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/db.js'); // Import your database connection
 
-
 // User table structure
 const User = sequelize.define('User', {
   id: {

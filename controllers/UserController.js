@@ -84,7 +84,7 @@ async function loginUser(req, res) {
     res.status(200).json({ 
       message: 'Login successful!', 
       user: { id: user.id, username: user.username }, 
-      "Token Key": token });
+      token: token });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Something went wrong!' });
