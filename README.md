@@ -75,7 +75,9 @@ POST / – Add a new service
 ## Testing
 
 Base URL: http://localhost:5000
+
 Authorization: Bearer <token> (if required)
+
 Content-Type: application/json
 
 
