@@ -52,14 +52,14 @@ Server starts at: http://localhost:5000
 
 ## API Endpoints 
 
-User Routes ( ```bash /user ``` )
+#### User Routes ( ```bash /user ``` )
 
 ```bash POST /register ``` – Register a new user (password will be hashed)
 #
 ```bash POST /login ```– Login with username/password and receive a JWT token
 
 
-Booking Routes ( ```bash /booking ```)
+#### Booking Routes ( ```bash /booking ```)
 
 ```bash GET / ``` – Fetch all bookings
 #
@@ -70,7 +70,7 @@ Booking Routes ( ```bash /booking ```)
 ```bash DELETE /:id ``` – Delete booking by ID
 
 
-Service Routes (```bash /service ```)
+#### Service Routes (```bash /service ```)
 
 ```bash GET / ``` – List all services
 #
