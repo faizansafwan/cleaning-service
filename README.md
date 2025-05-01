@@ -55,20 +55,25 @@ Server starts at: http://localhost:5000
 User Routes ( ```bash /user ``` )
 
 ```bash POST /register ``` – Register a new user (password will be hashed)
+#
 ```bash POST /login ```– Login with username/password and receive a JWT token
 
 
 Booking Routes ( ```bash /booking ```)
 
 ```bash GET / ``` – Fetch all bookings
+#
 ```bash POST / ``` – Create a new booking
+#
 ```bash PUT /:id ``` – Update booking by ID
+#
 ```bash DELETE /:id ``` – Delete booking by ID
 
 
 Service Routes (/service ```)
 
 ```bash GET / ``` – List all services
+#
 ```bash POST / ``` – Add a new service
 
 
