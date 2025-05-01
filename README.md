@@ -70,7 +70,7 @@ Booking Routes ( ```bash /booking ```)
 ```bash DELETE /:id ``` – Delete booking by ID
 
 
-Service Routes (/service ```)
+Service Routes (```bash /service ```)
 
 ```bash GET / ``` – List all services
 #
