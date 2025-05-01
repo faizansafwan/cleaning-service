@@ -52,32 +52,33 @@ Server starts at: http://localhost:5000
 
 ## API Endpoints 
 
-User Routes (/user)
+User Routes ( ```bash /user ``` )
 
-POST /register – Register a new user (password will be hashed)
-POST /login – Login with username/password and receive a JWT token
-
-
-Booking Routes (/booking)
-
-GET / – Fetch all bookings
-POST / – Create a new booking
-PUT /:id – Update booking by ID
-DELETE /:id – Delete booking by ID
+```bash POST /register ``` – Register a new user (password will be hashed)
+```bash POST /login ```– Login with username/password and receive a JWT token
 
 
-Service Routes (/service)
+Booking Routes ( ```bash /booking ```)
 
-GET / – List all services
-POST / – Add a new service
+```bash GET / ``` – Fetch all bookings
+```bash POST / ``` – Create a new booking
+```bash PUT /:id ``` – Update booking by ID
+```bash DELETE /:id ``` – Delete booking by ID
+
+
+Service Routes (/service ```)
+
+```bash GET / ``` – List all services
+```bash POST / ``` – Add a new service
 
 
 ## Testing
 
+```bash
 Base URL: http://localhost:5000
-
-Authorization: Bearer <token> (if required)
-
+#
+Authorization: Bearer  <token> 
+#
 Content-Type: application/json
-
+```
 
